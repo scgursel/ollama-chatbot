@@ -33,6 +33,7 @@ function ChatWindow({
             if (e.key === "Enter" && !e.shiftKey) {
               e.preventDefault();
               sendMessage();
+              
             }
           }}
           onChange={(e) => setCurrentMessage(e.target.value)}
