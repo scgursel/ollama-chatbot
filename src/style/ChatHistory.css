@@ -1,0 +1,143 @@
+/* ChatHistory.css */
+
+.chat-history {
+  width: 22%;
+  background: #f9f9fc;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem; 
+
+}
+
+.chat-history.collapsed {
+  width: 2.5rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  
+}
+
+.new-conversation-btn {
+  background: #007bff;
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.1rem; 
+
+}
+.new-conversation-btn:hover {
+  background: #0056b3;
+  color: white;
+}
+.chat-history.dark .new-conversation-btn{
+  background-color: #4444dd;
+  color: white;
+}
+
+
+.toggle-collapse-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 1rem;
+  font-size: 1.1rem; 
+
+}
+
+.toggle-collapse-btn:hover {
+  background: #0056b3;
+}
+.chat-history.dark .toggle-collapse-btn{
+  background-color: #4444dd;
+  color: white;
+}
+
+.chat-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-history li {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.chat-history .delete {
+  background: transparent; 
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.chat-history li:active {
+  background: #0056b3;
+}
+
+/* Light Mode */
+.chat-history.light {
+  background: #f9f9fc;
+  color: #333;
+}
+
+.chat-history.light li {
+  background-color: #f8f9fa;
+}
+
+.chat-history.light li:hover {
+  background-color: #dee2e6;
+  color: white;
+}
+
+/* Dark Mode */
+.chat-history.dark {
+  background-color: #29293f;
+  color: #ddd;
+}
+
+.chat-history.dark li {
+  background-color: #33334d;
+}
+
+.chat-history.dark li:hover {
+  background-color: #44445e;
+}
+
+.chat-history.collapsed.dark {
+  background-color: #29293f;
+}
+
+.chat-history.collapsed.light {
+  background-color: #ffffff;
+}
+
+
+.chat-history .delete i {
+  font-size: 1.2rem;
+  color: #ff4d4d; 
+}
+
+.chat-history .delete:hover i {
+  color: #e60000; 
+  background-color: transparent;
+  
+}
+

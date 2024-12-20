@@ -1,0 +1,72 @@
+/* src/App.css */
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  font-size: 1.1rem; /* Increase global font size */
+
+}
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  
+}
+.theme-toggle-btn {
+  opacity: 0.3;
+}
+button {
+  border: none;
+  
+  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem; 
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Light Mode */
+.app-container.light {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.app-container.light .theme-toggle button {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Dark Mode */
+.app-container.dark {
+  background-color: #1e1e2f;
+  color: #ddd;
+}
+
+.app-container.dark .theme-toggle button {
+  background-color: #444;
+  color: #ddd;
+}
+/* App.css */
+
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+
